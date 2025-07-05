@@ -1,0 +1,16 @@
+<input id="one" onkeyup="call()">
+<h1 id="res">result</h1>
+<h2>name</h2>
+<button onclick="calll(event)">karthi</button>
+<button onclick="calll(event)">mahi</button>
+<script>
+    var onee=document.getElementById("one")
+    var ress=document.getElementById("res")
+    var two=document.querySelector("h2")
+    function call(){
+    ress.textContent=onee.value
+    }
+    function calll(){
+    two.textContent=event.target.textContent
+}
+    </script>

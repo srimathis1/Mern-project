@@ -1,0 +1,30 @@
+<h1>guess the number</h1>
+<input id="no">
+<button onclick="call()">check</button>
+<p id="res" >you </p>
+<p id="sc">score:10</p>
+<script>
+    var no=document.getElementById("no")
+    var result=document.getElementById("res")
+    var b=Math.floor(Math.random())
+    var s=document.getElementById("sc")
+    var scoree=10
+    function call()
+    {
+    var c=no.value
+    if(c==b)
+    {
+        console.log("right")
+        res.textContent="Right"
+        
+
+
+    }
+    else
+    {
+        scoree=scoree-1
+        sc.textContent="score:"+scoree
+       res.textContent="Wrong"
+    }
+    }
+</script>
